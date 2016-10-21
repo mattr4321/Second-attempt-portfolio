@@ -7,8 +7,21 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  
+<nav>
+  <ul>
+    <a href="#home_page">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </ul>
+</nav>
 
-<%= yield %>
+
+<p> Welcome! The date and time is <%= Time.now %></p>
+
+<footer>
+  &copy; 2016 Kel's Cakes
+</footer>
 
 </body>
 </html>

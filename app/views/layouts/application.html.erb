@@ -15,7 +15,7 @@
 </head>
 <body>
   
-<nav>
+<nav>-
   <ul>
     <a href="#home_page">Home</a>
     <a href="#about">About</a>
@@ -24,9 +24,11 @@
 </nav>
 
 
-<p> Welcome! The date and time is <%= Time.now %></p>
+<p class="time"> Welcome! The date and time is <%= Time.now %></p>
 
-<footer>
+<div class="wrapper"> <p class="notice"><%= notice %></p> <p class="alert"><%= alert %></p> <%= yield %> </div>
+
+<footer id="footer">
   &copy; 2016 Kel's Cakes
 </footer>
 

@@ -18,9 +18,9 @@
     <% @products.each do |product| %>
       <div class="col-sm-2 col-md-4">
           <%= image_tag(product.image_url, class: "img-responsive") %>
-        <h1>Bike 1</h1>
-        <p>Pretty cool bike</p>
-        <strong>$ 42</strong>
+        <h1><%= link_to product.name, product %></h1>
+        <p><%= product.description %></p>
+        <strong>$ <%= product.price %></strong>
       </div><!-- /col -->
     <% end %>
   </div>

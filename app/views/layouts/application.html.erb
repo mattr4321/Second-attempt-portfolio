@@ -17,9 +17,10 @@
   
 <nav>
   <ul class="nav">
-    <a href="home_page">Home</a>
-    <a href="/static_pages/about">About</a>
-    <a href="#contact">Contact</a>
+    <a><%= link_to('Home', root_path) %></a>
+    <a><%= link_to('Products', products_path) %></a>
+    <a><%= link_to('About', static_pages_about_path) %></a>
+    <a><%= link_to('Contacts', static_pages_contact_path) %></a> 
   </ul>
 </nav>
 
@@ -27,6 +28,8 @@
 <p class="time"> Welcome! The time to buy Kelly's Cakes is <%= Time.now %></p>
 
 <div class="wrapper"> <p class="notice"><%= notice %></p> <p class="alert"><%= alert %></p> <%= yield %> </div>
+
+<%= yield %>
 
 <footer id="footer">
   &copy; 2016 Kel's Cakes

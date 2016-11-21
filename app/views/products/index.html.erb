@@ -5,27 +5,36 @@
 
 <h1>Products</h1>
 
-<table>
+<div class="row">
+  <div class="col-md-2">
+<!--<table>
   <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Image url</th>
-      <th>Colour</th>
-      <th>Price</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    <tr>-->
+      <p>Name</p>
+      <p>Description</p>
+      <p>Image</p>
+      <p>Colour</p>
+      <p>Price</p>
+      <!--<p colspan="3"></p>-->
+   <!-- </tr>
+  </thead>-->
+  </div>
+  
 
-  <tbody>
+  <div class="col-md-2">
+  <!--<tbody>-->
     <%= render @products %>
-  </tbody>
-</table>
+ <!-- </tbody>
+</table>-->
+</div>
 
+</div>
 
 <br>
 
-<%= link_to 'New Product', new_product_path %>
+<div class="new_product"><button><%= link_to 'New Product', new_product_path %></button></div>
+
+
 
 </body>
 

@@ -21,11 +21,20 @@
     <li><%= link_to('Products', products_path) %></li>
     <li><%= link_to('About', static_pages_about_path) %></li>
     <li><%= link_to('Contacts', static_pages_contact_path) %></li>
+    
+    <%= form_tag("/products", method: "get") do %>
+    <%= label_tag(:q, "Search for:") %>
+    <%= text_field_tag(:q) %>
+    <%= submit_tag("Search") %>
   </ul>
 </nav>
 
 
 <p class="time"> Welcome! The time to buy Kelly's Cakes is <%= Time.now %></p>
+
+
+
+<% end %>
 
 <div class="wrapper"> 
   <p class="notice"><%= notice %></p> 

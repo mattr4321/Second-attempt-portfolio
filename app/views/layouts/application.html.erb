@@ -44,8 +44,12 @@
 
 
 <div class="wrapper"> 
-  <p class="notice"><%= notice %></p> 
-  <p class="alert"><%= alert %></p> 
+  <% if notice %>
+    <p class="notice" role="notice"><%= notice %></p>
+  <% end %>
+  <% if alert %>
+  <p class="alert" role="alert"><%= alert %></p> 
+  <% end %>
 </div>
 
 <%= yield %>

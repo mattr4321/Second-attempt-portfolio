@@ -17,10 +17,10 @@
   
 <nav>
   <ul class="nav">
-    <li><%= link_to('Home', root_path) %></li>
-    <li><%= link_to('Products', products_path) %></li>
-    <li><%= link_to('About', static_pages_about_path) %></li>
-    <li><%= link_to('Contacts', static_pages_contact_path) %></li>
+    <a><%= link_to('Home', root_path) %></a>
+    <a><%= link_to('Products', products_path) %></a>
+    <a><%= link_to('About', static_pages_about_path) %></a>
+    <a><%= link_to('Contacts', static_pages_contact_path) %></a>
     
     <%= form_tag("/products", method: "get") do %>
     <%= label_tag(:q, "Search for:") %>

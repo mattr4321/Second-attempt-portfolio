@@ -3,12 +3,13 @@ class ProductsController < ApplicationController
 
   # GET /products
   # GET /products.json
+  
   def index
-    if params[:q]
+  if params[:q]
     search_term = params[:q]
     @products = Product.where("name LIKE ?", "%#{search_term}%")
     # return our filtered list here
-    else
+  else
       @products = Product.all
   end
   
@@ -31,6 +32,8 @@ class ProductsController < ApplicationController
 
   # POST /products
   # POST /products.json
+  def show
+    @comments = @product.comments.order("created_at DESC")
   def create
     @product = Product.new(product_params)
 

@@ -1,35 +1,57 @@
 <p id="notice"><%= notice %></p>
+<div class="product-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <%= image_tag(@product.image_url, class: "img-responsive detail img-zoom", data_zoom_image: "@product.image_url_large") %>
+      </div>
+      <div class="col-md-6">
+        <div class="row" data-product-id="<%= @product.id %>">
 
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
+          <div class="col-md-12">
+            <% cache @product do %>
+            <h1>
+                <strong>Name:</strong>
+                <%= @product.name %>
+            </h1>
+          
+            <p>
+              <strong>Price:</strong>
+              <%= @product.price %>€
+            </p>
+          
+            <p>
+              <strong>Description:</strong>
+              <%= @product.description %>
+            </p>
+            <% end %>
+            <p>
+              <strong>Colour:</strong>
+              <%= @product.colour %>
+            </p>
+            <p>Average Rating:</p>
+            <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div> 
+            <br>
+            <br>
+            <%= link_to 'Edit', edit_product_path(@product) %>
+            <%= link_to 'Back', products_path %>
+          </div>
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
+        </div>  
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <%= render partial: 'new_comment' %> 
+      </div>
 
-<p>
-  Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> 
-</p>
+      <div class="col-md-6">
+        <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
 
-<p>
-  <strong>Image url:</strong>
-  <%= @product.image_url %>
-</p>
-
-<p>
-  <strong>Colour:</strong>
-  <%= @product.colour %>
-</p>
-
-<p>
-  <strong>Price</strong>
-  <%= @product.price %>
-</p>
-
-<%= @product.highest_rating_comment %>
-
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+        <%= render partial: 'comments' %>
+      </div>
+    </div>
+    
+    
+  </div>  
+</div>

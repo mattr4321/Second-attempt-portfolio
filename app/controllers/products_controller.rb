@@ -61,6 +61,7 @@ class ProductsController < ApplicationController
       end
     end
   end
+ 
 
   # DELETE /products/1
   # DELETE /products/1.json
@@ -82,5 +83,7 @@ class ProductsController < ApplicationController
     def product_params
       params.require(:product).permit(:name, :description, :image_url, :colour, :price)
     end
+  end
 end
+
 

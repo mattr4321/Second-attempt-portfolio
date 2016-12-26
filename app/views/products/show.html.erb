@@ -33,6 +33,7 @@
             <div class="rated" id="average-rating" data-score="<%= @product.average_rating %>"></div> 
             <br>
             <br>
+            <%= will_paginate @posts %>
             <%= link_to 'Edit', edit_product_path(@product) %>
             <%= link_to 'Back', products_path %>
           </div>

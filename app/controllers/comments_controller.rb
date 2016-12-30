@@ -2,7 +2,6 @@ class CommentsController < ApplicationController
     def create
         @product = Product.find(params[:product_id])
         @comment = @product.comments.new(comment_params)
-        #@comment = Post.paginate(:page => params[:page])
         @comment.user = current_user
         respond_to do |format|
           if @comment.save
@@ -30,7 +29,7 @@ class CommentsController < ApplicationController
     def initialize(user)
       user ||= User.new # guest user (not logged in)
       if user.admin?
-        can :manage, :all
+        can :destroy, :comment
       else
         can :read, :all
       end
@@ -43,3 +42,7 @@ class CommentsController < ApplicationController
         params.require(:comment).permit(:user_id, :body, :rating)
     end
 end
+
+###########################################
+
+

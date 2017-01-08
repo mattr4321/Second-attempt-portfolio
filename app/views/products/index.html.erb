@@ -1,41 +1,13 @@
 <body class="product_page">
+  <p id="notice"><%= notice %></p>
 
-<p id="notice"><%= notice %></p>
-
-
-<h1>Products</h1>
-
-<div class="row">
-  <div class="col-md-2">
-<!--<table>
-  <thead>
-    <tr>-->
-      <p>Name</p>
-      <p>Description</p>
-      <p>Image</p>
-      <p>Colour</p>
-      <p>Price</p>
-      <!--<p colspan="3"></p>-->
-   <!-- </tr>
-  </thead>-->
+  <div id="cakesale">
+    <h1>Cakes For Sale!</h1> 
+      <div class="new_product"><button><%= link_to 'New Product', new_product_path %></button></div>
+      <div class="col-md-12">
+      <%= render @products %>
+      </div>
   </div>
-  
-
-  <div class="col-md-2">
-  <!--<tbody>-->
-    <%= render @products %>
- <!-- </tbody>
-</table>-->
-</div>
-
-</div>
-
-<br>
-
-<div class="new_product"><button><%= link_to 'New Product', new_product_path %></button></div>
-
-
-
 </body>
 
 

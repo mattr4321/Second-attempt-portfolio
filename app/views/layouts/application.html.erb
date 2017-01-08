@@ -4,43 +4,53 @@
   <title>Workspace</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  
-  
+
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= csrf_meta_tags %>
 </head>
+
 <body>
-  
-<nav>
-  <ul class="nav">
-    <a><%= link_to('Home', root_path) %></a>
-    <a><%= link_to('Products', products_path) %></a>
-    <a><%= link_to('About', static_pages_about_path) %></a>
-    <a><%= link_to('Contacts', static_pages_contact_path) %></a>
-    
-    <%= form_tag("/products", method: "get") do %>
-    <%= label_tag(:q, "Search for:") %>
-    <%= text_field_tag(:q) %>
-    <%= submit_tag("Search") %>
-    <% end %>
-  </ul>
-  <ul class="nav pull-right">
-    <li>
-      <% if user_signed_in? %>
-        <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
-      <% else %>
-        <%= link_to('Login', new_user_session_path) %>
-      <% end %>
-    </li>
-  </ul>
-</nav>
+  <div>
+  <nav "navbar navbar-inverse navbar-fixed-top">
+    <!--  test -->
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+        data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+      </div>
+    </div>
+      <!-- test -->
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <a><%= link_to('Home', root_path) %></a>
+        <a><%= link_to('Products', products_path) %></a>
+        <a><%= link_to('About', static_pages_about_path) %></a>
+        <a><%= link_to('Contacts', static_pages_contact_path) %></a>
+        <a>
+          <% if user_signed_in? %>
+            <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+          <% else %>
+            <%= link_to('Login', new_user_session_path) %>
+          <% end %>
+        </a>
+        <a><%= form_tag("/products", method: "get") do %>
+        <%= label_tag(:q, "Search for:") %>
+        <%= text_field_tag(:q) %>
+        <%= submit_tag("Search") %>
+        <% end %>
+        </a>
+    </ul>
+  </nav>
+  </div>
 
-
-<p class="time"> Welcome! The time to buy Kelly's Cakes is <%= Time.now %></p>
 
 
 <div class="wrapper"> 
@@ -52,7 +62,13 @@
   <% end %>
 </div>
 
-<%= yield %>
+<div id="main">
+  <p class="time"> Welcome to Kelly's Cakes! It's Cake Time: <%= Time.now.to_formatted_s(:time) %></p>
+  <%= yield %>
+</div>
+
+
+
 
 <footer id="footer">
   &copy; 2016 Kel's Cakes

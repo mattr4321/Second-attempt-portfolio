@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workspace</title>
+  <title>Kelly's Cakes</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 
@@ -13,22 +13,22 @@
 </head>
 
 <body>
-  <div>
-  <nav "navbar navbar-inverse navbar-fixed-top">
+  
+  <nav "navbar navbar-inverse navbar-fixed-top" role="navigation">
     <!--  test -->
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse"
-        data-target=".navbar-collapse">
+        data-target="#navigationbar">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         </button>
       </div>
-    </div>
+    
       <!-- test -->
-    <div class="navbar-collapse collapse">
+    <div class="navbar-collapse collapse" id="navigationbar">
       <ul class="nav navbar-nav navbar-right">
         <a><%= link_to('Home', root_path) %></a>
         <a><%= link_to('Products', products_path) %></a>
@@ -47,9 +47,10 @@
         <%= submit_tag("Search") %>
         <% end %>
         </a>
-    </ul>
+      </ul>
+    </div>
+    </div>
   </nav>
-  </div>
 
 
 

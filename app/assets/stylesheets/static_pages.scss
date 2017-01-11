@@ -28,7 +28,7 @@
 
 #footer {
     text-align: center;
-    padding-top: 25px;
+    margin-top: 50px;
 }
 
 .paragraph {
@@ -50,6 +50,7 @@ body {
 
 .time {
     text-align: center;
+    margin-top: 50px;
     padding-top: 15px;
 }
 
@@ -87,7 +88,7 @@ body {
 }
 
 #cakesale h1 {
-    padding-top: 200px;
+    padding-top: 0px;
 }
 
 #contact_page {
@@ -95,3 +96,20 @@ body {
     padding-bottom: 100px;
 }
 
+.new_product {
+    padding-left: 46%;
+}
+
+.img-container {
+    padding-left: 35%;
+}
+
+#product_row {
+    margin-left: 40%;
+    margin-right: 40%;
+    padding-bottom: 50px;
+}
+
+.navbar li {
+    color: white;
+}

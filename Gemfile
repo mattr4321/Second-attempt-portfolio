@@ -41,6 +41,7 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'rspec-rails', '~> 3.5'
   gem 'factory_girl_rails', "~> 4.0"
+  gem 'rails-controller-testing'
 end
 
 group :development do
@@ -51,7 +52,6 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'rspec-rails', '~> 3.5'
-  gem 'rails-controller-testing'
 end
 
 group :production do

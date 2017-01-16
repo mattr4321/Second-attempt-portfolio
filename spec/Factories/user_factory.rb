@@ -4,12 +4,12 @@ FactoryGirl.define do
         first_name "testfirst"
         last_name "testlast"
             email 
-            password "test"
+            password "testtest"
         admin "false"
     end
     factory :admin, class: User do
         email 
-        password "testtest"
+        password "12345678"
         admin true
         first_name "Admin"
         last_name "User"

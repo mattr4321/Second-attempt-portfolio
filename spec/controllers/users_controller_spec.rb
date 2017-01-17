@@ -5,7 +5,7 @@ describe UsersController, :type => :controller do
     @user = FactoryGirl.create(:user)
     #@user = User.create!(email: "test@test.de", password: "testtest")
   end
-
+  bydbug
   describe 'GET #show' do
 
      context 'User is logged in' do

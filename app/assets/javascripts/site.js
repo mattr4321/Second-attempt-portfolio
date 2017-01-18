@@ -10,6 +10,12 @@ var refreshRating = function() {
 
 
 
-$(document).on('turbolinks:load', function(){
-    refreshRating();
+(document).on('turbolinks:load', function(){
+   	refreshRating();
+    ('.img-zoom').elevateZoom({ zoomType: "lens", 
+    	lensShape: "round", 
+		lensSize: 300, 
+		lensFadeIn: 450, 
+		lensFadeOut: 500 
+	});
 });

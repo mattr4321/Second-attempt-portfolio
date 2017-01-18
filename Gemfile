@@ -42,6 +42,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   gem 'factory_girl_rails', "~> 4.0"
   gem 'rails-controller-testing'
+  gem 'stripe'
 end
 
 group :development do
@@ -54,10 +55,12 @@ group :development do
   gem 'rspec-rails', '~> 3.5'
   gem 'rails-controller-testing'
   gem 'factory_girl_rails', "~> 4.0"
-  gem 'stripe'
+  #gem 'stripe'
   gem 'byebug'
+  #gem 'stripe_event'
+  gem 'brakeman'
 end
 
 group :production do
-  #gem 'devise'
+  gem 'stripe'
 end

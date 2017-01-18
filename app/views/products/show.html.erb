@@ -29,9 +29,9 @@
               <strong>Color:</strong>
               <%= @product.colour %>
             </p>
-            <%= form_tag "/payments/create" do %>
+              <%= form_tag "/payments/create" do %>
                 <%= render partial: "shared/stripe_checkout_button" %>
-                <%= hidden_field_tag(:product_id) %>
+                <%= hidden_field_tag(:product_id, @product.id) %>
               <% end %>
            
             <p>Average Rating:</p>

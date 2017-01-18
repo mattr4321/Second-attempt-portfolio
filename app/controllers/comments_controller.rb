@@ -3,7 +3,7 @@ class CommentsController < ApplicationController
         @product = Product.find(params[:product_id])
         @comment = @product.comments.new(comment_params)
         @comment.user = current_user
-        byebug
+      
         respond_to do |format|
           if @comment.save
             format.html { redirect_to @product, notice: 'Review was created successfully.' }
@@ -16,7 +16,9 @@ class CommentsController < ApplicationController
     end
 
     def destroy
-      @comment = Comment.find(params[:id])
+      #@comment = Comment.find(params[:id])
+      current_user = User.find(session[:user_id])
+      @comment = current_user.Comment.find(params[:id])
       product = @comment.product
       @comment.destroy
       redirect_to product

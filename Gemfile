@@ -59,6 +59,7 @@ group :development do
   gem 'byebug'
   #gem 'stripe_event'
   gem 'brakeman'
+  gem 'dalli'
 end
 
 group :production do

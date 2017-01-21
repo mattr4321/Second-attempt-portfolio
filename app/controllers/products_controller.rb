@@ -12,8 +12,6 @@ class ProductsController < ApplicationController
     end
   end
 
-  # GET /products/1
-  # GET /products/1.json
   def show
     @comments = @product.comments.order("created_at DESC").page(params[:page]).per_page(3)
   end
@@ -23,12 +21,9 @@ class ProductsController < ApplicationController
     @product = Product.new
   end
 
-  # GET /products/1/edit
   def edit
   end
 
-  # POST /products
-  # POST /products.json
   def create
     @product = Product.new(product_params)
 
@@ -43,8 +38,7 @@ class ProductsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /products/1
-  # PATCH/PUT /products/1.json
+
   def update
     respond_to do |format|
       if @product.update(product_params)

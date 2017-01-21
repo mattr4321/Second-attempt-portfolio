@@ -10,12 +10,11 @@ var refreshRating = function() {
 
 
 
-(document).on('turbolinks:load', function(){
-   	refreshRating();
-    ('.img-zoom').elevateZoom({ zoomType: "lens", 
+$(document).on('turbolinks:load ajaxSuccess', function(){refreshRating();
+    $('.img-zoom').elevateZoom({ zoomType: "lens", 
     	lensShape: "round", 
 		lensSize: 300, 
-		lensFadeIn: 450, 
-		lensFadeOut: 500 
+		lensFadeIn: 500, 
+		lensFadeOut: 600 
 	});
 });

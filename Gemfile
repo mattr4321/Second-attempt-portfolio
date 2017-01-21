@@ -60,6 +60,7 @@ group :development do
   #gem 'stripe_event'
   gem 'brakeman'
   gem 'dalli'
+  gem 'redis-store'
   gem 'redis-rails'
 end
 

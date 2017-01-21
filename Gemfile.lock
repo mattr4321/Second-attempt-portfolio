@@ -242,6 +242,7 @@ DEPENDENCIES
   rails (~> 5.0.0)
   rails-controller-testing
   redis-rails
+  redis-store
   rspec-rails (~> 3.5)
   sass-rails (~> 5.0)
   spring

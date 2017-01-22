@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'redis-store', '~> 1.2.0'
+gem 'redis-rails', '~> 5'
+
 group :production do
   gem 'pg'
 end
@@ -33,6 +36,8 @@ gem 'devise'
 # Use ActiveModel has_secure_password
 # 'bcrypt', '~> 3.1.7'
 
+gem 'redis-store', '~> 1.2.0'
+gem 'redis-rails', '~> 5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -60,8 +65,6 @@ group :development do
   #gem 'stripe_event'
   gem 'brakeman'
   gem 'dalli'
-  gem 'redis-store'
-  gem 'redis-rails'
 end
 
 group :production do

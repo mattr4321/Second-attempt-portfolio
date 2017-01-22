@@ -241,8 +241,8 @@ DEPENDENCIES
   pg
   rails (~> 5.0.0)
   rails-controller-testing
-  redis-rails
-  redis-store
+  redis-rails (~> 5)
+  redis-store (~> 1.2.0)
   rspec-rails (~> 3.5)
   sass-rails (~> 5.0)
   spring

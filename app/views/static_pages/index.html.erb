@@ -19,7 +19,7 @@
           <%= image_tag(product.image_url, class: "img-responsive") %>
         <h1><%= link_to product.name, product %></h1>
         <p><%= product.description %></p>
-        <strong>$ <%= product.price %></strong>
+        <strong><%= product.price %></strong>
       </div>
     <% end %>
   </div>

@@ -73,3 +73,14 @@ class UsersController < ApplicationController
       params.require(:user).permit(:first_name, :last_name)
     end
 end
+
+# User Search Controller
+def index
+     @users = User.search(params[:search])
+     @title = "All Users"
+
+     respond_to do |format|
+       format.html
+       format.json { render :json => @users }
+     end
+end

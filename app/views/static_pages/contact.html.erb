@@ -2,9 +2,11 @@
 
 <%= flash[:notice] %>
 
+
 <%= form_tag("/static_pages/thank_you") do %>
 <div id="contact_page">
   <h1>Contact Us</h1>
+  <center>
 <div class="row">
   <div class="col-md-4">
     <div class="form-group">
@@ -19,17 +21,22 @@
     <div class="form-group">
       <%= label_tag :message %>
       <%= text_area_tag :message, nil, class: "btn btn-default form-control", placeholder: "Enter Message", :required => true %>
-    </div>      
-  </div>
-</div>
- 
-  <%= submit_tag "Submit", class:'btn btn-default' %>
+    </div>  
+    
+    <%= submit_tag "Submit", class:'btn btn-default' %>
   <% end %>
+  </div>
+  </center>
+</div>
+
+
 </div>
 
 
 
-<div class="pic">
-  <%= image_tag("http://images.media-allrecipes.com/userphotos/250x250/00/70/88/708879.jpg", class: "img-responsive") %>
-</div>
+<center>
+  <div class="pic">
+    <%= image_tag("http://images.media-allrecipes.com/userphotos/250x250/00/70/88/708879.jpg", class: "img-responsive") %>
+  </div>
+</center>
 

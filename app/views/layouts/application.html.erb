@@ -45,7 +45,8 @@
         <li>  
          <form id='search-form' class='form-inline'>
             <%= form_tag("/products", method: "get", class:'navbar-form navbar-right') do %>
-            <input type="text" class="form-control search-form" placeholder="Search">
+            <%= text_field_tag(:q, nil, class: 'search-form form-control', placeholder: 'Search Products') %>
+            
             <%= submit_tag("Search", class:'btn btn-default search-button', type:'submit') %>
             <% end %>
            </form> 

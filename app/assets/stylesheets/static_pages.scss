@@ -133,3 +133,25 @@ body {
 #product_row .btn {
     color: white;
 }
+
+
+/*   IPHONE 6 MEDIA QUERIES   */
+
+@media only screen 
+	and (min-device-width: 375px)
+	and (max-device-width: 667px)
+	and (-webkit-min-device-pixel-ratio: 2){
+    
+    .new_product  {
+        padding-left: 31%;
+    }
+    .col-md-12   {
+       width: 95%;
+       padding-left: 0px;
+       padding-right: 0px;
+    }
+    .img-responsive {
+        padding-left: 7%;
+       
+    }
+}

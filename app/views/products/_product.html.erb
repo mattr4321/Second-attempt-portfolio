@@ -1,4 +1,5 @@
 <%= javascript_include_tag 'cable', 'data-turbolinks-track': 'reload' %>
+<body>
 <div class='row'>
 <% cache product do %>
 <center>
@@ -20,7 +21,7 @@
     <h4 class="text-center"><%= product.price %></h4>
 </div>
 
-<center>
+<!--<center>-->
     <div id="product_row" class="row">
         <div class="col-md-4">
             <%= link_to 'View', product , :class=>"btn btn-info"%>
@@ -32,7 +33,8 @@
             <%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' }, :class=>"btn btn-info btn-product" %>
         </div>
     </div>
-</center>
+<!--</center>-->
 
 <% end %>
 </div>
+</body>

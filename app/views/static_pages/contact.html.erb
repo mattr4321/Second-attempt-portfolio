@@ -10,20 +10,20 @@
 <div class="row">
   <div class="col-md-4">
     <div class="form-group">
-      <%= label_tag :name %>
+      <%= label_tag :name, nil, class: "contact_tag" %>
       
       <%= text_field_tag :name, nil, class: "btn btn-default form-control",  placeholder: "Enter Name", :required => true %>
     </div>      
     <div class="form-group">
-      <%= label_tag :email, "Email Address" %>
+      <%= label_tag :email, nil, class: "contact_tag" %>
       <%= text_field_tag :email, nil, class: "btn btn-default form-control", placeholder: "Enter Email", :required => true %>
     </div>
     <div class="form-group">
-      <%= label_tag :message %>
+      <%= label_tag :message, nil, class: "contact_tag" %>
       <%= text_area_tag :message, nil, class: "btn btn-default form-control", placeholder: "Enter Message", :required => true %>
     </div>  
     
-    <%= submit_tag "Submit", class:'btn btn-default' %>
+    <%= submit_tag "Submit", class:'btn btn-info' %>
   <% end %>
   </div>
   </center>

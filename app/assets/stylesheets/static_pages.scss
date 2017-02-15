@@ -5,13 +5,13 @@
 #home_page {
     text-align: center;
     font-size: 48px;
-    font-family: Garamond;
+    
 }
 
 #contact {
     text-align: center;
     font-size: 5em;
-    font-family: Garamond;
+    
     padding-bottom: 50px;
 }
 
@@ -23,7 +23,7 @@
 #about {
     text-align: center;
     font-size: 5em;
-    font-family: Garamond;
+    
 }
 
 #footer {
@@ -62,7 +62,7 @@ body {
 
 .nav a {
     font-size: 20px;
-    font-family: Garamond;
+    
     padding: 10px;
 }
 
@@ -96,6 +96,7 @@ body {
 
 .carousel-caption {
     margin-bottom: 20%;
+    font-size: 3em;
 }
 
 #cakesale h1 {
@@ -193,3 +194,7 @@ body {
         
     }
 }
+
+    * {
+        font-family: 'Roboto Slab', serif;
+    }

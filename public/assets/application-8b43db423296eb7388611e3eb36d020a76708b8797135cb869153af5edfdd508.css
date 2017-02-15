@@ -1,0 +1,377 @@
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/raty.eot");
+  src: url("fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/raty.svg#raty") format("svg");
+  src: url("fonts/raty.ttf") format("truetype");
+  src: url("fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* line 6, /home/ubuntu/workspace/app/assets/stylesheets/products.scss */
+.product_page {
+  background-color: beige;
+}
+/* line 1, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 10, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 17, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 23, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+  /*&:hover {
+    color: #fff;
+    background-color: #fff;
+  }*/
+}
+/* line 26, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+
+/* line 36, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 40, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 47, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 52, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 56, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 62, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 70, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 81, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 87, /home/ubuntu/workspace/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 5, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+#home_page {
+  text-align: center;
+  font-size: 48px;
+  font-family: Garamond;
+}
+
+/* line 11, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+#contact {
+  text-align: center;
+  font-size: 5em;
+  font-family: Garamond;
+  padding-bottom: 50px;
+}
+
+/* line 18, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.number {
+  text-align: center;
+  font-size: 3em;
+}
+
+/* line 23, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+#about {
+  text-align: center;
+  font-size: 5em;
+  font-family: Garamond;
+}
+
+/* line 29, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+#footer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* line 34, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.paragraph {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* line 39, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+body {
+  background-color: #f2e6b1;
+}
+
+/* line 43, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.product_page {
+  background-color: #f2e6b1;
+}
+
+/* line 47, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.new_product a {
+  color: white;
+}
+
+/* line 50, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.cake {
+  display: inline;
+  padding-left: 50px;
+}
+
+/* line 56, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.time {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 15px;
+}
+
+/* line 63, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.nav a {
+  font-size: 20px;
+  font-family: Garamond;
+  padding: 10px;
+}
+
+/* line 69, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.description {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 15px;
+}
+
+/* line 77, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.about_story {
+  text-align: center;
+  font-size: 2em;
+  padding-bottom: 50px;
+}
+
+/*   CAROUSEL */
+/* line 85, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+#carousel-example-generic {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 50px;
+}
+
+/* line 92, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.img-responsive {
+  background-size: contain;
+  min-height: 400px;
+}
+
+/* line 97, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.carousel-caption {
+  margin-bottom: 20%;
+}
+
+/* line 101, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+#cakesale h1 {
+  padding-top: 0px;
+}
+
+/* line 105, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+#contact_page {
+  padding-bottom: 100px;
+}
+
+/* line 110, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.new_product {
+  padding-left: 46%;
+}
+
+/* line 115, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+#product_row {
+  margin-left: 40%;
+  margin-right: 40%;
+  padding-bottom: 50px;
+}
+
+/* line 121, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.navbar li {
+  color: white;
+}
+
+/* line 125, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.search-form {
+  margin-top: 10px;
+  padding-right: 5px;
+}
+
+/* line 130, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.search-button {
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+/* line 135, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+.form-control {
+  text-align: left;
+  max-width: 400px;
+}
+
+/* line 140, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+#product_row .btn {
+  color: white;
+}
+
+/*   IPHONE 6 MEDIA QUERIES   */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 152, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+  .new_product {
+    padding-left: 31%;
+  }
+
+  /* line 155, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+  .col-md-12 {
+    width: 95%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  /* line 160, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+  .img-responsive {
+    padding-left: 0%;
+  }
+
+  /* LANDING PAGE*/
+  /* line 166, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+  #carousel-example-generic {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  /* line 172, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+  #footer {
+    margin-top: 0px;
+  }
+
+  /* PRODUCT PAGE */
+  /* line 178, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+  .img-container {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  /* ABOUT PAGE*/
+  /* line 184, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+  .about_story {
+    margin-left: 10px;
+    margin-right: 10px;
+    word-spacing: normal;
+    line-height: 150%;
+  }
+
+  /* line 190, /home/ubuntu/workspace/app/assets/stylesheets/static_pages.scss */
+  .pic .about_pic {
+    padding-bottom: 100px;
+    padding-left: 0px;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+

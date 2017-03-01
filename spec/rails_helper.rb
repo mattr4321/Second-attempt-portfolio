@@ -1,7 +1,7 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 ENV['RAILS_ENV'] ||= 'test'
-REDIS_PROVIDER: REDISTOGO_URL
-REDIS_URL: redis://redistogo:@hoki.redistogo.com:11046/
+#REDIS_PROVIDER: "redis://h:p26e25b37f2783c3977ce69366a19ed6235b9b97a17b3c3c14ab10164ff3907b5@ec2-34-197-246-201.compute-1.amazonaws.com:38969"
+#REDIS_URL: "redis://h:p26e25b37f2783c3977ce69366a19ed6235b9b97a17b3c3c14ab10164ff3907b5@ec2-34-197-246-201.compute-1.amazonaws.com:38969"
 require File.expand_path('../../config/environment', __FILE__)
 # Prevent database truncation if the environment is production
 abort("The Rails environment is running in production mode!") if Rails.env.production?
